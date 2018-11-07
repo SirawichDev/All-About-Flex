@@ -1,0 +1,26 @@
+ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 2px solid blue;
+}
+
+ .column {
+    flex-direction: column;
+
+}
+.row {
+    flex-direction: row;  /*default ของ flex direction เป็น row อยู่แล้ว*/
+}
+.reverse-row{
+    flex-direction: row-reverse;
+}
+.reverse-column{
+    flex-direction: column-reverse;
+}
+li{
+    border: 1px solid #333;
+    margin: 1em;
+    padding: 1em;
+}

@@ -1,0 +1,25 @@
+ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 2px solid blue;
+}
+
+.wrapper-row{
+    flex-direction: row;
+    flex-wrap: wrap;  /*ภ้า tag มีความกว้างเกินที่ขนาด flex-direction นั้นๆรับได้จะขึ้นบรรทัดใหม่ */
+}
+.wrapper-reverse{
+    flex-direction: row;
+    flex-wrap: wrap-reverse;  /*ภ้า tag มีความกว้างเกินที่ขนาด flex-direction นั้นๆรับได้จะขึ้นบรรทัดใหม่ */
+}
+.no-wrapper{
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+li{
+    border: 1px solid #333;
+    margin: 1em;
+    padding: 1em;
+}
