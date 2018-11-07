@@ -1,0 +1,39 @@
+ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 2px solid blue;
+}
+.justify-start{
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.justify-end{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.justify-center{
+    flex-direction: row;
+    justify-content: center;
+}
+.justify-between{
+    flex-direction: row;
+    justify-content: space-between; /*จะไม่มีพื้นที่ให้ซ้ายสุดกับขวาสุดง่ายๆ คือ เว้นแค่ระหว่าง tag 2 tag*/
+}
+.justify-around{
+    flex-direction: row;
+    justify-content: space-around; /* จะมีพื้นที่ให้ซ้ายสุดกับขวาสุด  ง่ายๆคือเว้น space ไว้ให้ด้านซ้ายกับขวา ที่เหลือก็เหมือน กับ space between*/
+}
+/* space-around จะจัดให้ด้านขวาและด้านซ้ายของ tag 1 เว้นว่างขนาดเท่า tah  1 
+                                    แต่ทำให้ tag 2 ก็เว้นซ้านลแะขวาตามขนาดของตัวเองเหมือนกันกลายเป็นว่า ช่องว่างระหว่าง tag กลายเป็น 2 */
+.justify-evenly{
+    flex-flow: row wrap;
+    justify-content: space-evenly;  /* แก้ปัญหา ของ space-around*/
+}
+
+li{
+    border: 1px solid #333;
+    margin: 1em;
+    padding: 1em;
+}
