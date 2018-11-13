@@ -1,0 +1,28 @@
+ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    width: 80%;
+    margin: 0;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    border: 2px solid blue;
+}
+li{
+    border: 1px solid #333;
+    margin: 1em;
+    padding: 1em;
+}
+.flex2{
+    border: 10px dashed gold;
+    order:2; /*จะเห็นว่า  class flex2 ไม่ได้อยู่ประจุที่เดียวกันจน ใช้ คำสั่ง order */
+}
+.flex3{
+    border: 10px dashed sienna;
+    order: 3;
+}
+.flex4{
+    border: 10px dashed chartreuse;
+    order: 1 /* flex 4 จะแสดงก่อน 3 และ 2 เพราะ flex ที่มี order น้อยสุด จะขึ้นมาอยู่อันแรกสุด <ไม่นับ ที่ไม่ได้ใส่ order จะมาก่อนพวกที่ใส่ order>*/
+}
