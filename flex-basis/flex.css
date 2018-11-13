@@ -1,0 +1,19 @@
+ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+
+    margin: 0;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    border: 2px solid blue;
+}
+li{
+    border: 1px solid #333;
+    margin: 1em;
+    padding: 1em;
+}
+.flex1{
+    flex-basis: 20%; /* อารมณ์เหมือน width ใน css ทั่วไป แต่ basis จะฉลาดกว่า เมื่อนำมาใช้ใน flex มันจะพยายมยืดหยุ่นตัวเอง ตาม direction นั้นๆ ให้มากที่สุดตามความกว้างที่จะทำได้้ */
+}
